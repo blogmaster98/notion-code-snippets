@@ -1,0 +1,51 @@
+/* 아로스 모바일 어플 형식(css) */
+.container_postbtn { display: none }
+
+@media (max-width: 1024px)
+.aros-bottom-menu {
+    display: flex;
+}
+
+.aros-bottom-menu {
+    display: none;
+    background: var(--arosbottommenu-bgcolor);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    padding: var(--arosbottommenu-wrapper-padding);
+    box-shadow: 0 -5px 10px rgb(0 0 0 / 10%);
+    z-index: var(--arosbottommenu-zindex);
+    transition: all 200ms;
+}
+
+.aros-bottom-menu-icon-wrapper {
+    position: relative;
+    line-height: 0;
+}
+
+.aros-bottom-menu-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex: 1;
+    font-size: var(--arosbottommenu-font-size);
+    text-decoration: none;
+    color: var(--arosbottommenu-text-color);
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none!important;
+    transition: color 200ms;
+}
+
+.aros-bottom-menu-item i {
+    font-size: var(--arosbottommenu-icon-size);
+    color: var(--arosbottommenu-icon-color);
+    font-family: FontAwesome;
+    transition: color 200ms;
+      padding-bottom : 10px;
+}

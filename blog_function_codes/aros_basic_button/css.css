@@ -1,0 +1,51 @@
+/* 아로스 기본 버튼 */
+
+.aros-button {
+  background-color: rgb(240, 36, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  width: 80%;
+  height: 80px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  font-family: 'NanumGothicCodingBold';
+
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.aros-button:hover {
+  background-color: rgb(235, 161, 65);
+  transform: scale(1.1);
+}
+
+.aros-button.most-likely-to-click {
+  padding: 20px 30px;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aros-button {
+    font-size: 22px;
+    width: 90%;
+    height: 60px;
+    overflow: visible;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 100%; /* Set max-width to 100% */
+  }
+
+  .aros-button.most-likely-to-click {
+    padding: 15px 25px;
+    font-size: 40px;
+  }
+}

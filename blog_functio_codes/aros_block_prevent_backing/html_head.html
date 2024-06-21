@@ -1,0 +1,23 @@
+<div>
+<!--#1뒤로가기 막는 버튼-->
+<script type="text/javascript">
+  if (typeof history.pushState === 'function') {
+    var CategoryURL = location.href;
+    CategoryURL = CategoryURL.replace(/\?category=([0-9]+)/ig, '');
+    history.pushState(null, null, CategoryURL);
+  }
+
+  var backButtonClicked = false;
+
+  window.addEventListener('popstate', function () {
+    if (!backButtonClicked) {
+      // Scroll to top
+      window.scrollTo(0, 0);
+      backButtonClicked = true;
+    } else {
+      // Actual back navigation
+      history.back();
+    }
+  });
+</script>
+</div>

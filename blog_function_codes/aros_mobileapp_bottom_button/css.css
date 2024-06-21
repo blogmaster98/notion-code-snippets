@@ -1,4 +1,4 @@
-/* 아로스 모바일 어플 형식(css) */
+/* 아로스 모바일앱 하단버튼 스타일 - 시작 */
 .container_postbtn { display: none }
 
 @media (max-width: 1024px)
@@ -49,3 +49,4 @@
     transition: color 200ms;
       padding-bottom : 10px;
 }
+/* 아로스 모바일앱 하단버튼 스타일 - 종료 */

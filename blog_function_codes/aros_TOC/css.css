@@ -1,4 +1,4 @@
-/* 아로스-목차 */
+/* 아로스 목차 스타일 TOC 시작 */
 .aros-toc {
 border: 1px solid #ccc;
 padding: 10px 0px 0px 15px;
@@ -47,4 +47,4 @@ margin-bottom: 5px !important;
 
 .toc-center {text-align: center; padding-top: 10px}
 
-/* 목차 스타일 종료 - TOC */
+/* 아로스 목차 스타일 TOC 종료 */

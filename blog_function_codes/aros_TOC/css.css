@@ -1,0 +1,50 @@
+/* 아로스-목차 */
+.aros-toc {
+border: 1px solid #ccc;
+padding: 10px 0px 0px 15px;
+background-color: #ffffff;
+}
+
+.aros-toc ul {
+list-style-type: decimal;
+}
+
+.aros-toc p {
+font-weight: 550;
+margin-bottom: 7px;
+}
+
+#toc * {
+font-size: 20px;
+color: rgb(72, 75, 248);
+}
+
+#toc a {
+color: rgb(72, 75, 248);
+}
+
+#toc a:hover {
+color: rgb(245, 167, 219);
+}
+
+#toc ul {
+margin-bottom: 0px;
+margin-top: 5px;
+}
+
+#toc > li {
+color: rgb(5, 9, 221);    
+margin-bottom: 15px;
+}
+
+#toc {
+margin-left: 3px;
+}
+
+#toc > li > ul li {
+margin-bottom: 5px !important;
+}
+
+.toc-center {text-align: center; padding-top: 10px}
+
+/* 목차 스타일 종료 - TOC */

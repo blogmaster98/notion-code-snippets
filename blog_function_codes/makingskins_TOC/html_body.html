@@ -1,0 +1,52 @@
+<!-- makingskins TOC 목차 - 시작 -->
+<div>
+<script>
+    /* toc 목차 생성 */
+    jQuery(document).ready(function ($) {
+        function scrollToHeading(targetId) {
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        $(document).on('click', '#toc a', function (e) {
+            e.preventDefault();
+            var targetId = $(this).attr('href').substring(1); 
+            scrollToHeading(targetId);
+        });
+
+        $("#toc").toc({ content: ".area_view", headings: "h2,h3,h4" });
+
+        $(window).on('hashchange', function () {
+            var targetId = window.location.hash.substring(1);
+            scrollToHeading(targetId);
+        });
+
+        var hash = window.location.hash;
+        if (hash) {
+            scrollToHeading(hash.substring(1));
+        }
+    });
+</script>
+
+<!-- 목차 -->
+<div class="area_view">
+    <div class="aros-toc">
+        <div class="toc-center">
+            <p>목차</p>
+        </div>
+        <ul id="toc"></ul>
+    </div>
+    [##_article_rep_desc_##]
+</div>
+<div class="area_etc">
+    <s_tag_label>
+        <dl class="list_tag">
+            <dt class="tit_tag">TAG</dt>
+            <dd class="desc_tag">[##_tag_label_rep_##]</dd>
+        </dl>
+    </s_tag_label>
+</div>
+</div>
+<!-- makingskins TOC 목차 - 종료 -->

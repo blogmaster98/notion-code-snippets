@@ -1,0 +1,29 @@
+<!-- makingskins h1 제목에 링크 다는 코드 - 시작 -->
+.custom-h1-link {
+display: none;
+}
+
+h1.entry-title {
+position: relative;
+}
+
+h1.entry-title::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+}
+
+h1.entry-title a {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 2;
+display: block;
+}
+<!-- makingskins h1 제목에 링크 다는 코드 - 종료 -->

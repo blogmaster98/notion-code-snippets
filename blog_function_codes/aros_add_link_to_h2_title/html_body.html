@@ -1,12 +1,17 @@
 <!-- 아로스 소제목 h2 링크 연결 - 시작 -->
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
-    var h2Elements = document.querySelectorAll('.skin_view .area_view h2');
-    h2Elements.forEach(function(element) {
-    element.addEventListener('click', function() {
-    window.location.href = "[##_blog_link_##]";
+        var h2Elements = document.querySelectorAll('.skin_view .area_view h2');
+        h2Elements.forEach(function(element) {
+            var linkElement = document.createElement('a');
+            //!!!아래 링크를 꼭 수정하세요! 아니면 목록으로 이동!!!
+            linkElement.href = "[##_blog_link_##]";
+            linkElement.innerHTML = element.innerHTML;
+            linkElement.style.color = 'inherit';
+            linkElement.style.textDecoration = 'none';
+            element.innerHTML = '';
+            element.appendChild(linkElement);
+        });
     });
-    });
-    });
-  </script>
+</script>
 <!-- 아로스 소제목 h2 링크 연결 - 종료 -->

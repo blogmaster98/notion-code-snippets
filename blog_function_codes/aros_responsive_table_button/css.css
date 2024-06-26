@@ -1,0 +1,46 @@
+/* 아로스 반응형 표 버튼 코드 - 시작 */
+    .card-container {
+      width: 90%;
+      margin: 20px auto; /* Set margin to 20px on top and bottom, auto on left and right */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-auto-rows: minmax(80px, auto);
+      gap: 10px; /* Optional: Adjust the gap between cards */
+      justify-content: center;
+      background-color: #fff; /* Set background color for the card container */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+      border-radius: 15px; /* Increased border-radius for a more rounded appearance */
+      position: relative;
+      z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      position: relative;
+      border: 1px solid #d1e780;
+      background-color: #f9f9f9; /* Set background color for the card */
+      cursor: pointer; /* Add a pointer cursor for interaction */
+      transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s;
+      border-radius: 15px; /* Increased border-radius for a more rounded appearance */
+      transform: translateY(-5px); /* Initial pop-out effect */
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); /* Initial box-shadow for pop-out effect */
+    }
+
+    .card:hover {
+      background-color: #dee9b6; /* Change background color on hover */
+      transform: translateY(-10px); /* Further pop-out effect on hover */
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        width: 100%; /* Set to 100% for full-width container */
+      }
+
+      .card {
+        padding: 15px; /* Adjusted padding */
+      }
+    }
+/* 아로스 반응형 표 버튼 코드 - 종료 */

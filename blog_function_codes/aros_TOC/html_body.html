@@ -1,72 +1,71 @@
 <!-- 아로스 목차 TOC - 시작 -->
-<div>
-<!-- 아로스 목차 TOC 생성 - 시작 -->
-    <script>
-    $(document).ready(function () {
-        function scrollToHeading(targetId) {
-            var targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    
-        $(document).on('click', '#toc a', function (e) {
-            e.preventDefault();
-            var targetId = $(this).attr('href').substring(1); 
-            scrollToHeading(targetId);
-        });
-    
-        $("#toc").toc({ content: ".area_view", headings: "h2,h3,h4" });
-    
-        $(window).on('hashchange', function () {
-            var targetId = window.location.hash.substring(1);
-            scrollToHeading(targetId);
-        });
-    
-        var hash = window.location.hash;
-        if (hash) {
-            scrollToHeading(hash.substring(1));
-        }
-    });
-    </script>
-<!-- 아로스 목차 TOC 생성 - 종료 -->
-
-
-<!-- 아로스 목차 영역 - 시작 -->
-    <div class="area_view">
-      <div class="aros-toc ">
-        <div class="toc-center">
-          <p>목차</p>
-        </div>
-        <ul id="toc"></ul>
-      </div>
-      <br>
-      <!-- 목차 밑 광고 - 시작 -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-12341234"
-          crossorigin="anonymous"></script>
-      <!-- [상단, 목차위] 광고 -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-12341234"
-          data-ad-slot="1747789760"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      <!-- 목차 밑 광고 - 시작 -->		
-      <br>					
-          [##_article_rep_desc_##]
-        </div>
-        <div class="area_etc">
-          <s_tag_label>
-            <dl class="list_tag">
-              <dt class="tit_tag">TAG</dt>
-              <dd class="desc_tag">[##_tag_label_rep_##]</dd>
-            </dl>
-          </s_tag_label>
-        </div>
-      </div>
-<!-- 아로스 목차 영역 - 종료 -->
-</div>
+    <div>
+        <!-- 아로스 목차 TOC 생성 - 시작 -->
+            <script>
+            $(document).ready(function () {
+                function scrollToHeading(targetId) {
+                    var targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            
+                $(document).on('click', '#toc a', function (e) {
+                    e.preventDefault();
+                    var targetId = $(this).attr('href').substring(1); 
+                    scrollToHeading(targetId);
+                });
+            
+                $("#toc").toc({ content: ".area_view", headings: "h2,h3,h4" });
+            
+                $(window).on('hashchange', function () {
+                    var targetId = window.location.hash.substring(1);
+                    scrollToHeading(targetId);
+                });
+            
+                var hash = window.location.hash;
+                if (hash) {
+                    scrollToHeading(hash.substring(1));
+                }
+            });
+            </script>
+        <!-- 아로스 목차 TOC 생성 - 종료 -->
+        
+        <!-- 아로스 목차 영역 - 시작 -->
+            <div class="area_view">
+              <div class="aros-toc ">
+                <div class="toc-center">
+                  <p>목차</p>
+                </div>
+                <ul id="toc"></ul>
+              </div>
+              <br>
+              <!-- 목차 밑 광고 - 시작 -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-12341234"
+                  crossorigin="anonymous"></script>
+              <!-- [상단, 목차위] 광고 -->
+              <ins class="adsbygoogle"
+                  style="display:block"
+                  data-ad-client="ca-pub-12341234"
+                  data-ad-slot="1747789760"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <!-- 목차 밑 광고 - 시작 -->		
+              <br>					
+                  [##_article_rep_desc_##]
+                </div>
+                <div class="area_etc">
+                  <s_tag_label>
+                    <dl class="list_tag">
+                      <dt class="tit_tag">TAG</dt>
+                      <dd class="desc_tag">[##_tag_label_rep_##]</dd>
+                    </dl>
+                  </s_tag_label>
+                </div>
+              </div>
+        <!-- 아로스 목차 영역 - 종료 -->
+    </div>
 <!-- 아로스 목차 TOC - 종료 -->

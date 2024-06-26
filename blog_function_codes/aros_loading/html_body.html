@@ -1,0 +1,17 @@
+<!-- 아로스 로딩 코드 - 시작 -->
+  <script>
+      function loadImage(){
+          document.querySelector("#aros-loading").style.display="none"}
+          try{document.querySelector("iframe[onload*='google']").onload=function(){
+          loadImage();}
+          setTimeout(function(){loadImage();},800);}
+          catch(err){setTimeout(function(){loadImage();},800);}
+  </script>    
+
+  <div id="aros-loading" >
+  	<div class="aros-loader">
+      <!-- !!!로딩 이미지 링크 주소 밑에서 꼭 바꾸세요!!! -->
+  		<img src="./images/loading.gif" width="500" alt="loading">
+  	</div>
+  </div>	
+<!-- 아로스 로딩 코드 - 종료 -->

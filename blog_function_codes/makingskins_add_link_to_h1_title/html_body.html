@@ -1,0 +1,15 @@
+<div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const customLink = document.getElementById('custom-h1-link');
+    if (customLink) {
+    const entryTitle = document.querySelector('h1.entry-title');
+    if (entryTitle) {
+    const entryTitleLink = document.createElement('a');
+    entryTitleLink.href = customLink.href;
+    entryTitle.appendChild(entryTitleLink);
+    }
+    }
+    });
+  </script>
+</div>

@@ -1,0 +1,29 @@
+/* 아로스 로딩 코드 - 시작 */
+#aros-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    z-index: 1022222;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.aros-loader{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.aros-loader img{
+    width:150px;
+}
+
+@media screen and (max-width:768px) {
+    .aros-loader img{width:20%;
+    }
+}
+/* 아로스 로딩 코드 - 종료 */
